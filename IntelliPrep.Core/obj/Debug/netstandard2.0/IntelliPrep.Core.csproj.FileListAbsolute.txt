@@ -1,0 +1,9 @@
+E:\projects\IntelliPrep\IntelliPrep.Core\bin\Debug\netstandard2.0\IntelliPrep.Core.deps.json
+E:\projects\IntelliPrep\IntelliPrep.Core\bin\Debug\netstandard2.0\IntelliPrep.Core.dll
+E:\projects\IntelliPrep\IntelliPrep.Core\bin\Debug\netstandard2.0\IntelliPrep.Core.pdb
+E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\netstandard2.0\IntelliPrep.Core.csproj.AssemblyReference.cache
+E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\netstandard2.0\IntelliPrep.Core.csproj.CoreCompileInputs.cache
+E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\netstandard2.0\IntelliPrep.Core.AssemblyInfoInputs.cache
+E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\netstandard2.0\IntelliPrep.Core.AssemblyInfo.cs
+E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\netstandard2.0\IntelliPrep.Core.dll
+E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\netstandard2.0\IntelliPrep.Core.pdb

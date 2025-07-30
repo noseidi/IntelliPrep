@@ -1,0 +1,17 @@
+E:\projects\IntelliPrep\IntelliPrep.API\obj\Debug\netcoreapp2.2\IntelliPrep.API.csproj.AssemblyReference.cache
+E:\projects\IntelliPrep\IntelliPrep.API\obj\Debug\netcoreapp2.2\IntelliPrep.API.csproj.CoreCompileInputs.cache
+E:\projects\IntelliPrep\IntelliPrep.API\obj\Debug\netcoreapp2.2\IntelliPrep.API.RazorAssemblyInfo.cache
+E:\projects\IntelliPrep\IntelliPrep.API\obj\Debug\netcoreapp2.2\IntelliPrep.API.RazorAssemblyInfo.cs
+E:\projects\IntelliPrep\IntelliPrep.API\obj\Debug\netcoreapp2.2\IntelliPrep.API.AssemblyInfoInputs.cache
+E:\projects\IntelliPrep\IntelliPrep.API\obj\Debug\netcoreapp2.2\IntelliPrep.API.AssemblyInfo.cs
+E:\projects\IntelliPrep\IntelliPrep.API\bin\Debug\netcoreapp2.2\IntelliPrep.API.deps.json
+E:\projects\IntelliPrep\IntelliPrep.API\bin\Debug\netcoreapp2.2\IntelliPrep.API.runtimeconfig.json
+E:\projects\IntelliPrep\IntelliPrep.API\bin\Debug\netcoreapp2.2\IntelliPrep.API.runtimeconfig.dev.json
+E:\projects\IntelliPrep\IntelliPrep.API\bin\Debug\netcoreapp2.2\IntelliPrep.API.dll
+E:\projects\IntelliPrep\IntelliPrep.API\bin\Debug\netcoreapp2.2\IntelliPrep.API.pdb
+E:\projects\IntelliPrep\IntelliPrep.API\bin\Debug\netcoreapp2.2\IntelliPrep.Core.dll
+E:\projects\IntelliPrep\IntelliPrep.API\bin\Debug\netcoreapp2.2\IntelliPrep.Core.pdb
+E:\projects\IntelliPrep\IntelliPrep.API\obj\Debug\netcoreapp2.2\IntelliPrep.API.RazorTargetAssemblyInfo.cache
+E:\projects\IntelliPrep\IntelliPrep.API\obj\Debug\netcoreapp2.2\IntelliPrep.API.csproj.CopyComplete
+E:\projects\IntelliPrep\IntelliPrep.API\obj\Debug\netcoreapp2.2\IntelliPrep.API.dll
+E:\projects\IntelliPrep\IntelliPrep.API\obj\Debug\netcoreapp2.2\IntelliPrep.API.pdb
