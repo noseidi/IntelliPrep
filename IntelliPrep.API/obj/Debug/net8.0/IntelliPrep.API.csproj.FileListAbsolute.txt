@@ -194,3 +194,4 @@ E:\projects\IntelliPrep\IntelliPrep.API\obj\Debug\net8.0\refint\IntelliPrep.API.
 E:\projects\IntelliPrep\IntelliPrep.API\obj\Debug\net8.0\IntelliPrep.API.pdb
 E:\projects\IntelliPrep\IntelliPrep.API\obj\Debug\net8.0\IntelliPrep.API.genruntimeconfig.cache
 E:\projects\IntelliPrep\IntelliPrep.API\obj\Debug\net8.0\ref\IntelliPrep.API.dll
+E:\projects\IntelliPrep\intelliprep.api\obj\Debug\net8.0\IntelliPrep.API.sourcelink.json

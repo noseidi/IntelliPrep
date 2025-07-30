@@ -7,9 +7,10 @@ namespace IntelliPrep.API.Data;
 public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
-
+  public DbSet<Topic> Topics { get; set; }
+        public DbSet<Question> Questions { get; set; }
     public DbSet<Test> Tests => Set<Test>();
-    public DbSet<Question> Questions => Set<Question>();
+    public DbSet<Option> Options { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -18,11 +19,7 @@ public class AppDbContext : DbContext
             .WithOne()
             .OnDelete(DeleteBehavior.Cascade);
 
-        modelBuilder.Entity<Question>()
-            .Property(q => q.Options)
-            .HasConversion(
-                v => string.Join("|||", v),
-                v => v.Split("|||", StringSplitOptions.None).ToList()
-            );
+       
     }
 }
+

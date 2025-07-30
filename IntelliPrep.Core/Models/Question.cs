@@ -1,14 +1,15 @@
-﻿using System;
+
 using System.Collections.Generic;
-using System.Text;
 
 namespace IntelliPrep.Core.Models
+
 {
-   public class Question
+    public class Question
     {
         public int Id { get; set; }
-        public string Text { get; set; } = "";
-        public List<string> Options { get; set; } 
-        public int CorrectOptionIndex { get; set; }
+        public string Text { get; set; }
+        public ICollection<Option> Options { get; set; } = new List<Option>(); 
+        public int TopicId { get; set; }
+        public Topic Topics { get; set; }
     }
 }

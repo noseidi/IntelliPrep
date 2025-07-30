@@ -1,0 +1,34 @@
+// File: Controllers/QuestionsController.cs
+using IntelliPrep.API.Data;
+using IntelliPrep.API.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace IntelliPrep.API.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class QuestionsController : ControllerBase
+    {
+        private readonly AppDbContext _context;
+        public QuestionsController(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetQuestions()
+        {
+            var questions = await _context.Questions.Include(q => q.Topic).ToListAsync();
+            return Ok(questions);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddQuestion([FromBody] Question question)
+        {
+            _context.Questions.Add(question);
+            await _context.SaveChangesAsync();
+            return Ok(question);
+        }
+    }
+}
