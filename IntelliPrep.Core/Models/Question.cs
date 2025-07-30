@@ -8,8 +8,8 @@ namespace IntelliPrep.Core.Models
     {
         public int Id { get; set; }
         public string Text { get; set; }
-        public ICollection<Option> Options { get; set; } = new List<Option>(); 
+        public ICollection<string> Options { get; set; } = new List<string>(); 
         public int TopicId { get; set; }
-        public Topic Topics { get; set; }
+        public Topic Topic { get; set; }
     }
 }

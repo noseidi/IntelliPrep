@@ -1,17 +1,18 @@
-// File: Controllers/QuestionsController.cs
 using IntelliPrep.API.Data;
-using IntelliPrep.API.Models;
+using IntelliPrep.Core.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace IntelliPrep.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class QuestionsController : ControllerBase
+    public class QuestionController : ControllerBase
     {
         private readonly AppDbContext _context;
-        public QuestionsController(AppDbContext context)
+        public QuestionController(AppDbContext context)
         {
             _context = context;
         }
