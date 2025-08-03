@@ -5,8 +5,8 @@ E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\net8.0\IntelliPrep.Core.Gener
 E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\net8.0\IntelliPrep.Core.AssemblyInfoInputs.cache
 E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\net8.0\IntelliPrep.Core.AssemblyInfo.cs
 E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\net8.0\IntelliPrep.Core.csproj.CoreCompileInputs.cache
+E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\net8.0\IntelliPrep.Core.sourcelink.json
 E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\net8.0\IntelliPrep.Core.dll
 E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\net8.0\refint\IntelliPrep.Core.dll
 E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\net8.0\IntelliPrep.Core.pdb
 E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\net8.0\ref\IntelliPrep.Core.dll
-E:\projects\IntelliPrep\IntelliPrep.Core\obj\Debug\net8.0\IntelliPrep.Core.sourcelink.json

@@ -10,9 +10,9 @@ namespace IntelliPrep.API.Controllers;
 [Route("api/[controller]")]
 public class TestController : ControllerBase
 {
-    private readonly AppDbContext _context;
+    private readonly IntelliPrepDbContext _context;
 
-    public TestController(AppDbContext context)
+    public TestController(IntelliPrepDbContext context)
     {
         _context = context;
     }
