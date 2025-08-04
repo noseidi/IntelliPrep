@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\projects\\IntelliPrep\\IntelliPrep.API\\IntelliPrep.API.csproj": {}
+    "E:\\projects\\IntelliPrep\\intelliprep.api\\IntelliPrep.API.csproj": {}
   },
   "projects": {
-    "E:\\projects\\IntelliPrep\\IntelliPrep.API\\IntelliPrep.API.csproj": {
+    "E:\\projects\\IntelliPrep\\intelliprep.api\\IntelliPrep.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\projects\\IntelliPrep\\IntelliPrep.API\\IntelliPrep.API.csproj",
+        "projectUniqueName": "E:\\projects\\IntelliPrep\\intelliprep.api\\IntelliPrep.API.csproj",
         "projectName": "IntelliPrep.API",
-        "projectPath": "E:\\projects\\IntelliPrep\\IntelliPrep.API\\IntelliPrep.API.csproj",
+        "projectPath": "E:\\projects\\IntelliPrep\\intelliprep.api\\IntelliPrep.API.csproj",
         "packagesPath": "C:\\Users\\seydin1\\.nuget\\packages\\",
-        "outputPath": "E:\\projects\\IntelliPrep\\IntelliPrep.API\\obj\\",
+        "outputPath": "E:\\projects\\IntelliPrep\\intelliprep.api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

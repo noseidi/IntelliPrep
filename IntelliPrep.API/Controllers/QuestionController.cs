@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -42,7 +43,14 @@ namespace IntelliPrep.API.Controllers
             {
                 return NotFound();
             }
-
+if (!ModelState.IsValid)
+{
+    foreach (var error in ModelState)
+    {
+        Console.WriteLine($"{error.Key}: {string.Join(", ", error.Value.Errors.Select(e => e.ErrorMessage))}");
+    }
+    return BadRequest(ModelState);
+}
             return question;
         }
 

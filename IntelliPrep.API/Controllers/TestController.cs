@@ -1,34 +1,54 @@
-﻿using IntelliPrep.API.Data;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using IntelliPrep.API.Data;
 using IntelliPrep.Core.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
 
-namespace IntelliPrep.API.Controllers;
-
-[ApiController]
-[Route("api/[controller]")]
-public class TestController : ControllerBase
+namespace IntelliPrep.API.Controllers
 {
-    private readonly IntelliPrepDbContext _context;
-
-    public TestController(IntelliPrepDbContext context)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class TestsController : ControllerBase
     {
-        _context = context;
-    }
+        private readonly IntelliPrepDbContext _context;
 
-    [HttpGet]
-    public async Task<IActionResult> GetAll()
-    {
-        var tests = await _context.Tests.Include(t => t.Questions).ToListAsync();
-        return Ok(tests);
-    }
+        public TestsController(IntelliPrepDbContext context)
+        {
+            _context = context;
+        }
 
-    [HttpPost]
-    public async Task<IActionResult> Create(Test test)
-    {
-        _context.Tests.Add(test);
-        await _context.SaveChangesAsync();
-        return CreatedAtAction(nameof(GetAll), new { id = test.Id }, test);
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Test>>> GetTests()
+        {
+            return await _context.Tests.ToListAsync();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Test>> GetTest(int id)
+        {
+            var test = await _context.Tests.FindAsync(id);
+            if (test == null) return NotFound();
+            return test;
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<Test>> CreateTest(Test test)
+        {
+            _context.Tests.Add(test);
+            await _context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetTest), new { id = test.Id }, test);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteTest(int id)
+        {
+            var test = await _context.Tests.FindAsync(id);
+            if (test == null) return NotFound();
+
+            _context.Tests.Remove(test);
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
     }
 }

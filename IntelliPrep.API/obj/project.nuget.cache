@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gzlb2TZpAHo=",
+  "dgSpecHash": "O2Oz5TTAxzE=",
   "success": true,
-  "projectFilePath": "E:\\projects\\IntelliPrep\\IntelliPrep.API\\IntelliPrep.API.csproj",
+  "projectFilePath": "E:\\projects\\IntelliPrep\\intelliprep.api\\IntelliPrep.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\seydin1\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\seydin1\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
