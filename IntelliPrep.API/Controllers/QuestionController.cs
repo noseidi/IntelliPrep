@@ -56,30 +56,7 @@ namespace IntelliPrep.API.Controllers
             return CreatedAtAction(nameof(GetQuestion), new { id = question.Id }, question);
         }
 
-        // PUT: api/Question/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateQuestion(int id, Question question)
-        {
-            if (id != question.Id)
-                return BadRequest();
-
-            _context.Entry(question).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!QuestionExists(id))
-                    return NotFound();
-                else
-                    throw;
-            }
-
-            return NoContent();
-        }
-
+      
         // DELETE: api/Question/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteQuestion(int id)
