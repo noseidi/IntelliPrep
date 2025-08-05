@@ -14,8 +14,9 @@ export class QuestionListComponent implements OnInit {
   constructor(private questionService: QuestionService) {}
 
   ngOnInit(): void {
-    this.questionService.getQuestions().subscribe((data: Question[]) => {
-      this.questions = data;
+    this.questionService.getQuestions().subscribe({
+      next: (data) => (this.questions = data),
+      error: (err) => console.error('Error loading questions', err),
     });
   }
 }

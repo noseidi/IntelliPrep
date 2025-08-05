@@ -1,19 +1,22 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Question } from '../../core/services/models/question.model';
+
+export interface Question {
+  id: number;
+  text: string;
+  topicId: number;
+}
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class QuestionService {
-  private baseUrl = 'https://localhost:5001/api/questions'; // یا آدرس backend خودت
+  private apiUrl = 'https://localhost:5001/api/questions'; // آدرس بک‌اند خودتو بذار
 
   constructor(private http: HttpClient) {}
 
   getQuestions(): Observable<Question[]> {
-    return this.http.get<Question[]>(this.baseUrl);
+    return this.http.get<Question[]>(this.apiUrl);
   }
-
-  // سایر متدها مثل post, put, delete
 }

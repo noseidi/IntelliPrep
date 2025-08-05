@@ -1,4 +1,10 @@
-<h2>Questions</h2>
-<ul>
-  <li *ngFor="let q of questions">{{ q.text }}</li>
+<h2>لیست سوالات</h2>
+<ul *ngIf="questions.length > 0; else noQuestions">
+  <li *ngFor="let question of questions">
+    {{ question.id }} - {{ question.text }}
+  </li>
 </ul>
+
+<ng-template #noQuestions>
+  <p>هیچ سوالی موجود نیست.</p>
+</ng-template>
