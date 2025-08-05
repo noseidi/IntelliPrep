@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IntelliPrep.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+248a1c366f7e129c8a149d9c6cd5c4a6fdab5d9b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc3352cbbbac6b669abebb50559aadff62732423")]
 [assembly: System.Reflection.AssemblyProductAttribute("IntelliPrep.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IntelliPrep.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
