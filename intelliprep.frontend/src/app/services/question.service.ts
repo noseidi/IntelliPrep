@@ -1,9 +1,27 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+export interface Question {
+  id: number;
+  text: string;
+  topicId: number;
+}
 
 @Injectable({
   providedIn: 'root'
 })
 export class QuestionService {
 
-  constructor() { }
+  private apiUrl = 'https://localhost:5001/api/questions';
+
+  constructor(private http: HttpClient) { }
+
+  getQuestions(): Observable<Question[]> {
+    return this.http.get<Question[]>(this.apiUrl);
+  }
+
+  addQuestion(question: Question): Observable<Question> {
+    return this.http.post<Question>(this.apiUrl, question);
+  }
 }

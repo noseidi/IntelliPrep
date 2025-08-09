@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>افزودن سؤال جدید</h2>
+
+  <div>
+    <label>متن سؤال:</label>
+    <input type="text" [(ngModel)]="questionText" />
+  </div>
+
+  <div>
+    <label>شناسه موضوع (Topic ID):</label>
+    <input type="number" [(ngModel)]="topicId" />
+  </div>
+
+  <div>
+    <label>درجه سختی:</label>
+    <input type="number" [(ngModel)]="difficulty" />
+  </div>
+
+  <button (click)="addQuestion()">ثبت سؤال</button>
+</div>
